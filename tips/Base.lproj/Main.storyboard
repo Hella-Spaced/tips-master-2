@@ -60,9 +60,9 @@
                                 <rect key="frame" x="20" y="388" width="280" height="29"/>
                                 <animations/>
                                 <segments>
-                                    <segment title="18%"/>
-                                    <segment title="20%"/>
-                                    <segment title="25%"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
                                 </segments>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="HAv-9z-hTG"/>
@@ -123,21 +123,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LGv-Q5-gZb">
-                                <rect key="frame" x="20" y="76" width="280" height="29"/>
+                                <rect key="frame" x="20" y="124" width="280" height="29"/>
                                 <animations/>
                                 <segments>
                                     <segment title=""/>
                                     <segment title=""/>
                                     <segment title=""/>
                                 </segments>
+                                <connections>
+                                    <action selector="onDefaultChanged:" destination="OUe-Pl-FKY" eventType="valueChanged" id="mHM-XP-vg9"/>
+                                </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default tip Precentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ne-xj-KgP">
+                                <rect key="frame" x="10" y="82" width="171" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-Gz-zHQ">
+                                <rect key="frame" x="112" y="196" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="defaultInputTyped:" destination="OUe-Pl-FKY" eventType="editingChanged" id="3b9-K5-x9D"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="upJ-Fx-vLy"/>
+                    <navigationItem key="navigationItem" title="Settings" id="upJ-Fx-vLy"/>
                     <connections>
-                        <outlet property="segControl" destination="LGv-Q5-gZb" id="lut-gX-dcd"/>
+                        <outlet property="defaultField" destination="WaE-Gz-zHQ" id="oUd-1B-ird"/>
+                        <outlet property="defaultTipControl" destination="LGv-Q5-gZb" id="ZQT-fF-K1m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuG-7c-yuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
