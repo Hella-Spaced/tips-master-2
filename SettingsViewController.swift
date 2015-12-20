@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController {
     var lowestTip = 0
     var midTip = 0
     var highestTip = 0
+    
     let userDefaults = NSUserDefaults.standardUserDefaults()
 
     @IBOutlet weak var defaultTipControl: UISegmentedControl!
@@ -96,7 +97,8 @@ class SettingsViewController: UIViewController {
         
         
         if defaultTipControl.selectedSegmentIndex == 0 {
-            lowestTip = NSString(string: defaultField.text!).integerValue
+            lowestTip = (NSString(string: defaultField.text!).integerValue)
+//            lowestTip = String(Int(defaultField.doubleForKey("")
         }
         if defaultTipControl.selectedSegmentIndex == 1 {
             midTip = NSString(string: defaultField.text!).integerValue
