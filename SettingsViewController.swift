@@ -14,7 +14,6 @@ class SettingsViewController: UIViewController {
     var lowestTip = 0
     var midTip = 0
     var highestTip = 0
-    
     let userDefaults = NSUserDefaults.standardUserDefaults()
 
     @IBOutlet weak var defaultTipControl: UISegmentedControl!
@@ -46,10 +45,11 @@ class SettingsViewController: UIViewController {
         defaultTipControl.setTitle("\(highestTip)", forSegmentAtIndex: 2)
         userDefaults.synchronize()
         
-//        defaultTipControl.selectedSegmentIndex = userDefaults.integerForKey("default_tip")
     }
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
+        
+    
         
         userDefaults.setInteger(lowestTip, forKey: "lowest_tip")
         userDefaults.setInteger(midTip, forKey: "mid_tip")
@@ -59,12 +59,8 @@ class SettingsViewController: UIViewController {
 
     @IBAction func onDefaultChanged(sender: AnyObject) {
     
-//        print(defaultTipControl.selectedSegmentIndex)
         
-//        print(defaultField.text)
         
-//        userDefaults.setInteger(defaultTipControl.selectedSegmentIndex, forKey: "default_tip")
-//        userDefaults.synchronize()
         
         
         if defaultTipControl.selectedSegmentIndex == 0 {
@@ -86,10 +82,7 @@ class SettingsViewController: UIViewController {
     
 
         
-//        userDefaults.synchronize()
         
-//        print("IN SEGUE")
-//        print(userDefaults.integerForKey("default_tip"))
     }
     
     @IBAction func defaultInputTyped(sender: AnyObject) {
@@ -98,7 +91,6 @@ class SettingsViewController: UIViewController {
         
         if defaultTipControl.selectedSegmentIndex == 0 {
             lowestTip = (NSString(string: defaultField.text!).integerValue)
-//            lowestTip = String(Int(defaultField.doubleForKey("")
         }
         if defaultTipControl.selectedSegmentIndex == 1 {
             midTip = NSString(string: defaultField.text!).integerValue
@@ -109,14 +101,16 @@ class SettingsViewController: UIViewController {
        
         defaultTipControl.setTitle(defaultField.text, forSegmentAtIndex: defaultTipControl.selectedSegmentIndex)
         
-//        lowestTip.text = "%\(lowest)"
     
         
 
     }
+
+//    }
     /*
     // MARK: - Navigation
 
+    }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.

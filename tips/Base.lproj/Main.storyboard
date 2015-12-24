@@ -153,6 +153,10 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UVq-Jj-bUa" appends="YES" id="YsK-jd-Dej"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="upJ-Fx-vLy"/>
                     <connections>
@@ -161,6 +165,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuG-7c-yuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UVq-Jj-bUa"/>
             </objects>
             <point key="canvasLocation" x="1634" y="283"/>
         </scene>

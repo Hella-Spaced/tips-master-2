@@ -45,9 +45,9 @@ class ViewController: UIViewController {
         midTip = userDefaults.integerForKey("mid_tip")
         highestTip = userDefaults.integerForKey("highest_tip")
         
-        tipControl.setTitle("\(lowestTip)", forSegmentAtIndex: 0)
-        tipControl.setTitle("\(midTip)", forSegmentAtIndex: 1)
-        tipControl.setTitle("\(highestTip)", forSegmentAtIndex: 2)
+        tipControl.setTitle("\(lowestTip)%", forSegmentAtIndex: 0)
+        tipControl.setTitle("\(midTip)%", forSegmentAtIndex: 1)
+        tipControl.setTitle("\(highestTip)%", forSegmentAtIndex: 2)
         userDefaults.synchronize()
         
         //        defaultTipControl.selectedSegmentIndex = userDefaults.integerForKey("default_tip")
