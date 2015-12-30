@@ -4,7 +4,7 @@
 
 Submitted by: **Richard Rolle**
 
-Time spent: **** hours spent in total
+Time spent: **20** hours spent in total
 
 ## User Stories
 
