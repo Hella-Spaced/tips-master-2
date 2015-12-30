@@ -1,10 +1,10 @@
-# tips-master-2# Pre-work - *Name of App Here*
+# tips-master-2# Pre-work - *Tip it*
 
 **Tip it** is a tip calculator application for iOS.
 
 Submitted by: **Richard Rolle**
 
-Time spent: **X** hours spent in total
+Time spent: **** hours spent in total
 
 ## User Stories
 
@@ -38,7 +38,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2015] [Richard Rolle]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
